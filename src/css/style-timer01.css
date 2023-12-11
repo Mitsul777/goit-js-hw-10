@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.timer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+  margin: 0 10px; /* Добавлен отступ между полями для читаемости */
+}
+
+.value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+}
+
