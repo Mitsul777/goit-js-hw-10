@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+/* Застосуйте Montserrat для елементів, де ви хочете використовувати вагу 400 */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Для элементов, где нужен вес 400 */
+.element-with-weight-400 {
+    font-weight: 400;
+}
+
+/* Для элементов, где нужен вес 500 */
+.element-with-weight-500 {
+    font-weight: 500;
+}
+/* Решта вашого CSS... */
+.title {
+}
+/* Стилізація для поля вводу та його підпису "Delay" */
+.delay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 360px; /* Збільшено ширину поля delay на рівень state */
+}
+
+.delay input {
+    margin-top: 5px; /* Встановлюємо відступ між текстом та полем вводу */
+}
+
+/* Решта вашого існуючого CSS... */
+
+form {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-color: #808080;
+    border-radius: 8px;
+}
+
+fieldset {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    border: 1px solid  #808080;
+    border-radius: 5px;
+    width: 360px;
+    height: 78px;
+}
+
+
+
+/* Додаткові стилі для label у полі fieldset */
+fieldset label {
+    display: inline-block;
+
+}
+
+legend {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.fulRej {
+    display: flex;
+    justify-content: space-around;
+}
+.butSecForm {
+    display: flex;
+    justify-content: space-around;
+}
+fieldset legend {
+    margin-left: 15px; /* Зміщуємо текст "State" вліво на 28px */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* Для слова "State" без рамки */
+fieldset legend span {
+    .fulRej {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Стилізуємо сам текст "State" в legend */
+fieldset legend span::first-letter {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    width: 360px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4E75FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6C8CFF;
+}
