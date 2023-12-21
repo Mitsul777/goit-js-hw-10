@@ -33,6 +33,8 @@ document.querySelector('.form').addEventListener('submit', function (event) {
             message: `Fulfilled promise in ${delay}ms`,
             position: 'topCenter',
           });
+          // Очистка поля после успешной отправки
+        this.reset();
     // Обработка отклоненного промиса
     }).catch((delay) => {
         iziToast.error({
@@ -40,6 +42,8 @@ document.querySelector('.form').addEventListener('submit', function (event) {
             message: `Rejected promise in ${delay}ms`,
             position: 'topCenter',
           });
+          // Очистка поля после успешной отправки
+        this.reset();
     });
   });
   
@@ -69,6 +73,6 @@ document.querySelector('.form').addEventListener('submit', function (event) {
 
 // В случае успешного разрешения промиса вызывается функция showSnackbar с соответствующим сообщением.
 
-// В случае отклонения промиса также вызывается showSnackbar, но с другим сообщением.
+// В случае отклонения промиса также вызывается showSnackbar, но с другим сообщением.const apartment = {
 
 // Функция showSnackbar создает элемент Snackbar, добавляет его к телу документа и устанавливает таймер для его удаления через 3 секунды.

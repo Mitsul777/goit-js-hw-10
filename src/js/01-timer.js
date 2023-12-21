@@ -23,14 +23,14 @@ const options = {
 };
 
 
-
 // Обработка закрытия Flatpickr и валидация выбранной даты:
 // Находим кнопку "Start" и сохраняем ее в переменной startButton
 const startButton = document.querySelector('[data-start]');
+startButton.disabled = true;
 
 function validateSelectedDate() {
   const currentDate = new Date();
-  if (userSelectedDate < currentDate) {
+  if (!userSelectedDate || userSelectedDate < currentDate) {
     iziToast.error({
       title: 'Error',
       message: 'Please choose a date in the future',
@@ -94,6 +94,10 @@ function startTimer() {
 // Обновление интерфейса таймера:
 // Создаем функцию updateTimerUI, которая обновляет значения элементов таймера на странице с использованием объекта времени.
 function updateTimerUI(timeDifference) {
+    // Проверяем, чтобы значение времени не стало отрицательным
+  if (timeDifference < 0) {
+    timeDifference = 0;
+  }
   const timeObject = convertMs(timeDifference);
 
   // Обновляем значения элементов таймера
