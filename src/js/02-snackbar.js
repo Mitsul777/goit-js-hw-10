@@ -14,6 +14,10 @@ document.querySelector('.form').addEventListener('submit', function (event) {
   
     // Получаем выбранное состояние из элемента формы с именем 'state'
     const state = this.elements.state.value;
+
+      // Очищаем поля вводу
+  this.elements.delay.value = '';
+  this.elements.state.value = '';
   
     // Создаем промис, который разрешится или отклонится после задержки
     const myPromise = new Promise((resolve, reject) => {
@@ -73,6 +77,6 @@ document.querySelector('.form').addEventListener('submit', function (event) {
 
 // В случае успешного разрешения промиса вызывается функция showSnackbar с соответствующим сообщением.
 
-// В случае отклонения промиса также вызывается showSnackbar, но с другим сообщением.const apartment = {
+// В случае отклонения промиса также вызывается showSnackbar, но с другим сообщением.const apartment = 
 
 // Функция showSnackbar создает элемент Snackbar, добавляет его к телу документа и устанавливает таймер для его удаления через 3 секунды.
